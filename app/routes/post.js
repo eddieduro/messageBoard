@@ -17,7 +17,7 @@ export default Ember.Route.extend({
     deleteComment(comment){
       comment.destroyRecord();
       this.transitionTo('post');
-    },
+    },    
     updatePost(post, params){
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
