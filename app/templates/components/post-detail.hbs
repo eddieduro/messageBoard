@@ -2,3 +2,7 @@
 <h4>{{post.date}}</h4>
 <h4>By, {{post.author}}</h4>
 <p>{{post.message}}</p>
+
+{{#each post.comments as |comment|}}
+  {{comment-tile comment=comment}}
+{{/each}}

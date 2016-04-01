@@ -3,25 +3,11 @@
     "title": "How do I make grilled cheez?",
     "message": "Can sum1 puhleez helpz me to meek grilled cheez, I dun no how!!#@!",
     "author": "SomeDud",
-    "date": "04/01/2016",
-    "comment": {
-      "comment_1" : true
-    }
+    "date": "04/01/2016"
   }, {
     "title": "Can you teachz m3 to code?!",
     "message": "Can sum1 puhleez helpz me learn how to program on duh compooder, I dun no how!!#@!",
     "author": "SomeDudette",
-    "date": "04/02/2016",
-    "comment": {
-      "comment_1" : true
-    }
-  }],
-  "comments": [{
-    "message": "yeah bruh",
-    "title": "Chica1",
-    "date": "04/20/2016",
-    "post": {
-      "post_1": "true"
-    }
+    "date": "04/02/2016"
   }]
 }

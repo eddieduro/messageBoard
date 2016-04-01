@@ -11,8 +11,7 @@ export default Ember.Component.extend({
         title: this.get('title'),
         message: this.get('message'),
         author: this.get('author'),
-        date: this.get('date'),
-        comments: this.get('comments'),
+        date: this.get('date')
       };
       this.set('showNewPostForm', false);
       this.sendAction("savePost", params)
