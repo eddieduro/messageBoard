@@ -1,4 +1,4 @@
-{{#if showUpdatePostForm}}
+{{#liquid-if showUpdatePostForm class='activeForm'}}
   <form>
     <div class="form-group">
       <label for="title">Title:</label>
@@ -21,4 +21,4 @@
   </form>
 {{else}}
   <button class="btn deep-purple lighten-4" {{action 'updatePostForm'}}>update question</button>
-{{/if}}
+{{/liquid-if}}
