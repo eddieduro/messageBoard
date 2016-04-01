@@ -5,4 +5,5 @@
 
 {{#each post.comments as |comment|}}
   {{comment-tile comment=comment}}
+  <button class="btn"{{action 'deleteComment' comment}}>Delete Comment</button>
 {{/each}}
