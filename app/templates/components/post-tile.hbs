@@ -1,5 +1,12 @@
 
 {{#each post as |post|}}
-  <h3>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</h3>
-  <br>
+  {{#md-card id="basic-card"}}
+    {{#md-card-content}}
+      <h3>{{post.title}}</h3>
+      <h4>By, {{post.author}}</h4>
+    {{/md-card-content}}
+    {{#md-card-action}}
+      {{#link-to 'post' post.id}}<span class='purple-text'>View the question</span>{{/link-to}}
+    {{/md-card-action}}
+  {{/md-card}}
 {{/each}}

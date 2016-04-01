@@ -17,9 +17,9 @@
         <label for="date">Date:</label>
         {{input value=date id='date'}}
       </div>
-      <button class="btn" {{action 'savePost'}}>Submit</button>
+      <button class="btn deep-purple lighten-4" {{action 'savePost'}}>Submit</button>
     </form>
   </div>
 {{else}}
-  <button class="btn" {{action 'showForm'}}>Ask a new question!</button>
+  <button class="btn deep-purple lighten-4" {{action 'showForm'}}>Ask a new question!</button>
 {{/if}}

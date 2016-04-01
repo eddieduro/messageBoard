@@ -1,1 +1,8 @@
+{{#md-navbar name='Example' class='grey darken-1'}}
+  <!-- A workaround to get the "active" class
+    to apply to the active <li> automatically -->
+  {{#link-to 'index' tagName='li'}}
+    {{link-to 'home' 'index'}}
+  {{/link-to}}
+{{/md-navbar}}
 {{outlet}}
