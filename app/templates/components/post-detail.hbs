@@ -1,13 +1,15 @@
 <div class="container">
-  <h3>{{post.title}}</h3>
-  <h4>{{post.date}}</h4>
-  <h4>By, {{post.author}}</h4>
+  <h4>{{post.title}}</h4>
+  <h5>{{post.date}}</h5>
+  <h5>By, {{post.author}}</h5>
   <p>{{post.message}}</p>
+  {{update-post post=post updatePost="updatePost"}}
 </div>
+
 
 {{#each post.comments as |comment|}}
   {{comment-tile comment=comment}}
-  <div class="container">    
+  <div class="container">
     <button class=" btn deep-purple lighten-4"{{action 'deleteComment' comment}}>Delete Comment</button>
   </div>
 {{/each}}

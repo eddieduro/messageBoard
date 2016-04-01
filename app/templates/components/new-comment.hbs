@@ -3,17 +3,18 @@
     <form>
       <div class="form-group">
         <label for="message">Comment:</label>
-        {{input value=message id="value"}}
+        {{input value=message id="messageComment"}}
       </div>
       <div class="form-group">
         <label for="author">name:</label>
-        {{input value=author id='author'}}
+        {{input value=author id='authorComment'}}
       </div>
       <div class="form-group">
         <label for="date">Date:</label>
-        {{input type='date' value=date id='date'}}
+        {{md-input-date value=date}}
       </div>
       <button class="btn deep-purple lighten-4" {{action 'saveComment'}}>Submit</button>
+      <button class="btn deep-purple lighten-4" {{action 'closeForm'}}>Cancel</button>
     </form>
   </div>
 {{else}}

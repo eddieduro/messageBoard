@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     showForm(){
       this.set('showNewCommentForm', true);
     },
+    closeForm(){
+      this.set('showNewCommentForm', false);
+    },
     saveComment(){
       var params = {
         message: this.get('message'),
