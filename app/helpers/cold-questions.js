@@ -2,11 +2,10 @@ import Ember from 'ember';
 
 export function coldQuestions(params) {
   var question = params[0];
-
-  if(question.get('answers').get('length') < 1) {
-    return Ember.String.htmlSafe(' <span class="glyphicon glyphicon-question-sign color-blue"></span>')
-  } else if(question.get('answers').get('length') > 3) {
-    return Ember.String.htmlSafe(' <span class="glyphicon glyphicon-fire color-red"></span>')
+  if(question.get('comments').get('length') < 1) {
+    return Ember.String.htmlSafe(' <span class="fa fa-question color-blue"></span>')
+  } else if(question.get('comments').get('length') > 3) {
+    return Ember.String.htmlSafe(' <span class="fa fa-fire color-red"></span>')
   }
 }
 

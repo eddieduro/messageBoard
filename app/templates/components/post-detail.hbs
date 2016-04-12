@@ -7,7 +7,7 @@
 </div>
 
 
-{{#each post.comments as |comment|}}
+{{#each answerList.comments as |comment|}}
   {{comment-tile comment=comment}}
   <div class="container">
     <button class=" btn deep-purple lighten-4"{{action 'deleteComment' comment}}>Delete Comment</button>
