@@ -4,7 +4,6 @@ export default Ember.Service.extend({
 	comments: [],
 
 	add(comment) {
-		console.log(comment)
 		for(var i=0; i < this.get('comments').length; i++) {
 		  if(comment === this.get('comments')[i]) {
 			return "already on list";
