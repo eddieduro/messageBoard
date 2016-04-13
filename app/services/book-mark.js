@@ -1,18 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-	comments: [],
+	posts: [],
 
-	add(comment){
-  this.get('comments').pushObject(comment);
+	add(post){
+  this.get('posts').pushObject(post);
   },
-  remove(comment){
-    this.get('comments').removeObject(comment);
+  remove(post){
+    this.get('posts').removeObject(post);
   },
   empty(){
-    this.get('comments').setObjects([]);
+    this.get('posts').setObjects([]);
   },
-  includes(comment){
-    return this.get('comments').includes(comment);
+  includes(post){
+    return this.get('posts').includes(post);
   }
 });

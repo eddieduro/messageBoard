@@ -1,10 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  bookMark: Ember.inject.service(),
   model(params){
     return this.store.findRecord('post', params.post_id);
   },
   actions: {
+    addToBookmarks(post){
+      this.get('bookMark').add(post);
+      alert('Post Bookmarked');
+      this.transitionTo('index');
+    },
     saveComment(params){
       var newComment = this.store.createRecord('comment', params);
       var post = params.post;

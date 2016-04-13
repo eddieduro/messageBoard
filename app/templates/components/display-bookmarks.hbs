@@ -1,0 +1,4 @@
+{{#each bookMark.posts as |post|}}
+  <li>{{post.title}}</li>
+  <button class="btn btn-warning" {{action "remove" post}}>Remove Bookmark</button>
+{{/each}}

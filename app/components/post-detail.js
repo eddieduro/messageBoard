@@ -13,5 +13,8 @@ export default Ember.Component.extend({
     updatePost(post, params) {
       this.sendAction('updatePost', post, params);
     },
+    addToBookmarks(post){
+      this.sendAction('addToBookmarks', post);
+    }
   }
 });
